@@ -5,13 +5,13 @@ import bcrypt from "bscytpt";
 const userSchema = new Schema({
     username: {
         type: String,
-        required: true,
+        required: true, 
         unique: true,
         lowercase: true,
         trim: true,
         index: true,
     },
-    email: {
+    email: { 
         type: String,
         required: true,
         unique: true,
